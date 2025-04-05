@@ -1,0 +1,98 @@
+.root-volume {
+  position: absolute;
+  right: 20px;
+  display: flex;
+  align-items: center;
+
+  &.opened {
+    .volumeBtn {
+      opacity: 0.8;
+    }
+
+    .volumeControl {
+      display: block;
+    }
+  }
+
+  .volumeBtn {
+    opacity: 0.8;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    background-color: transparent !important;
+    background-image: url('./assets/visual-btn-volum.png');
+    background-size: contain !important;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .muteBtn {
+    opacity: 0.8;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    background-color: transparent !important;
+    background-image: url('./assets/visual-btn-volum-zero.png');
+    background-size: contain !important;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .volumeControl {
+    width: 80px;
+    display: none;
+  }
+
+  .bar {
+    width: 80px;
+  }
+
+  .progressbar {
+    .progress {
+      position: relative;
+      background-color: whitesmoke;
+      border-radius: 30px;
+      transition: width 100ms ease-in-out;
+      height: 100%;
+
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: -4px;
+        right: -5px;
+        width: 10px;
+        height: 10px;
+        border-radius: 10px;
+        background-color: whitesmoke;
+      }
+    }
+  }
+
+  .progressbar {
+    width: 100%;
+    height: 3px;
+    border-radius: 30px;
+    background-color: gray;
+  }
+}

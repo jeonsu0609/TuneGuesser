@@ -1,0 +1,77 @@
+.root-visual {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  margin-top: 20px;
+
+  .topSpace {
+    display: flex;
+    flex-basis: 0px;
+    flex-grow: 0.127;
+  }
+
+  .bottomSpace {
+    display: flex;
+    flex-basis: 50px;
+    flex-grow: 0.245;
+  }
+
+  .container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-basis: 380px;
+    flex-grow: 0.628;
+    overflow: hidden;
+
+    position: relative;
+
+    .album {
+      display: flex;
+      width: 100%;
+    }
+
+    .space {
+      width: 7.7vmin;
+    }
+
+    .lyricsSpace {
+      width: 4vmin;
+    }
+
+    .lyrics {
+      display: flex;
+      align-items: center;
+      width: 44vmin;
+      overflow: hidden;
+    }
+  }
+
+  .albumImage {
+    position: relative;
+    display: flex;
+    width: 100%;
+  }
+
+  .left {
+    display: flex;
+    flex: 21.3;
+    flex-basis: 255px;
+  }
+
+  .right {
+    display: flex;
+    flex: 14;
+    flex-basis: 172px;
+  }
+
+  .content {
+    display: flex;
+    flex: 64.7;
+    flex-basis: 783px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+  }
+}
